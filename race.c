@@ -33,8 +33,7 @@ int main(void){
 	
 	#pragma omp parallel for
 	for(i = 1; i < MAX - 1; i++){
-		array[i] += x[i] + y[i - 1];
-		array[i + 1] += 2*x[i];
+		array[i] += x[i] + y[i - 1] + array[i + 1];
 	}
 
 	for(i = 0; i < MAX; i++){
