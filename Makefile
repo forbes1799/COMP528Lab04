@@ -1,4 +1,4 @@
-COMPILER = icc
+COMPILER = gcc
 CFLAGS = -qopenmp -std=c99 -O3
 
 hello: HelloOpenMP.c
